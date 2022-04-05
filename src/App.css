@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* --------------------------------------------- */
+body {
+  padding: 3em;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+p {
+  margin: 0;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+
+.App div:not(:first-child) {
+  border: 1px solid black;
+}
+
+.App div:not(:first-child):hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.App div:nth-child(2) {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.App div:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
